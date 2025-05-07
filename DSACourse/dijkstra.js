@@ -185,7 +185,7 @@ console.log("---------- Testowanie ----------");
 // Używamy grafu 'graph', który już zdefiniowałeś i wypełniłeś
 
 // Wywołaj algorytm Dijkstry ze startu "A" do celu "E"
-let results = graph.Dijkstra("A", "E");
+let results = graph.Dijkstra("A", "F");
 let distances = results.distances;
 let previous = results.previous; // Pamiętaj, że Dijkstra zwraca teraz oba obiekty
 
@@ -198,9 +198,9 @@ console.log(previous); // Pokazuje skąd przyszliśmy najkrótszą drogą do ka�
 // Teraz użyjemy obiektu 'previous' do odtworzenia ścieżki z A do E
 // Pamiętaj, że metoda getShortestPath musi przyjąć obiekt previous jako argument!
 // Musisz ją dodać do klasy WeightedGraph
-let shortestPath = graph.getShortestPath("A", "E", previous);
+let shortestPath = graph.getShortestPath("A", "F", previous);
 
-console.log("\nNajkrótsza ścieżka z A do E:");
+console.log("\nNajkrótsza ścieżka z A do F:");
 console.log(shortestPath); // Powinno zwrócić tablicę wierzchołków tworzących ścieżkę
 
 console.log("---------- Koniec Testowania ----------");

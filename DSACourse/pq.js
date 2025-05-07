@@ -59,13 +59,6 @@ class PriorityQueue {
         idx = swap;
       }
     }
-    Dijkstra(start, end) {
-        let distances = {};
-        for(let item of this.values) {
-            distances[item] = item;
-        }
-        return distances;
-    }
   }
   
   class Node {
