@@ -65,7 +65,9 @@ class WeightedGraph {
         continue; // Pomiń resztę tej iteracji, przejdź do następnego elementu w kolejce
       }
 
-      for (let [neighbor, weight] of this.adjacencyList.get(current.val).entries()) {
+      for (let [neighbor, weight] of this.adjacencyList
+        .get(current.val)
+        .entries()) {
         let potentialNewDistance = distances[current.val] + weight;
         if (potentialNewDistance < distances[neighbor]) {
           distances[neighbor] = potentialNewDistance;
